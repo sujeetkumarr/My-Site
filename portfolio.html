@@ -1,74 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujeet Kadam – Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Portfolio | Sujeetkumar Kadam</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="portfolio-list">
-
-    <!-- Card 1 -->
-    <section id="reach-alliance" class="portfolio-card">
-      <button class="accordion">Reach Alliance – Semillas de Apego Case Study</button>
-      <div class="panel">
-        <p>
-          Field research in Bogotá schools captured the ripple effects of community-based mental health
-          programs on caregivers and children under five. Our mixed-methods approach, 
-          combining 28 interviews with behavioural surveys, produced evidence that is now used by
-          Kindred and local authorities to scale the model.
-        </p>
-        <a href="assets/Sujeet_Portfolio.pdf" class="btn-primary">Download full PDF</a>
+  <main class="container">
+    <h1>Portfolio</h1>
+    <div class="portfolio-list">
+      <div class="portfolio-card" id="reach-alliance">
+        <h2>Reach Alliance Research Program</h2>
+        <p>I was one of 16 students selected globally for the University of Melbourne’s Reach Alliance, researching the Semillas de Apego program in Colombia. Our case study uncovered how psychosocial support interventions reach children and families affected by conflict, with our insights shared across the Reach Alliance network and with policy partners.</p>
+        <a href="https://reachalliance.org/case-study/semillas-de-apego-nurturing-resilience-in-colombias-youngest-amid-conflict-and-displacement/" target="_blank">Read Case Study</a>
       </div>
-    </section>
-
-    <!-- Card 2 -->
-    <section id="byd-cx" class="portfolio-card">
-      <button class="accordion">BYD Australia – Customer Experience Strategy</button>
-      <div class="panel">
-        <p>
-          Working with BYD’s leadership in Melbourne, I mapped post-purchase pain points and designed
-          a phased delight program that blends surprise service perks with app-based check-ins.
-          The plan is forecast to lift repeat-purchase intent by 22 percent.
-        </p>
-        <a href="assets/Sujeet_Portfolio.pdf" class="btn-primary">Download full PDF</a>
+      <div class="portfolio-card" id="byd-cx">
+        <h2>BYD Australia – Consulting Project (Customer Experience Strategy)</h2>
+        <p>As a consultant for BYD, I helped design a post-purchase CX framework to drive loyalty and advocacy. Our recommendations led to a 15% boost in Net Promoter Score and were presented to the COO and Marketing Director.</p>
+        <a href="assets/Sujeet_Portfolio.pdf" download>Download full PDF</a>
       </div>
-    </section>
-
-    <!-- CV & LOR -->
-    <section class="downloads">
-      <h2>Downloads</h2>
+      <div class="portfolio-card" id="capsim">
+        <h2>Capsim & Harvard Business Simulations</h2>
+        <p>Competed in business simulations that tested leadership and market-entry strategy. I finished ranked top 10% globally and #1 in my cohort for strategy and execution.</p>
+        <a href="assets/Sujeet_Portfolio.pdf" download>Download full PDF</a>
+      </div>
+      <div class="portfolio-card" id="bba-thesis">
+        <h2>BBA Thesis – Influence of Meme Marketing in Gen Z (India)</h2>
+        <p>My final year thesis at Osmania University explored how meme culture shapes digital marketing outcomes among Gen Z, combining survey research with practical recommendations for brands.</p>
+        <a href="assets/Sujeet_Portfolio.pdf" download>Download full PDF</a>
+      </div>
+    </div>
+    <div class="portfolio-downloads">
+      <h3>Downloads</h3>
       <ul>
-        <li><a href="assets/Sujeet_CV.pdf">Curriculum Vitae (PDF)</a></li>
-        <li><a href="assets/Sujeet_LOR.pdf">Letters of Recommendation (PDF)</a></li>
+        <li><a href="assets/Sujeet_CV.pdf" download>Download my résumé (PDF)</a></li>
+        <li><a href="assets/Sujeet_LOR.pdf" download>Letters of Recommendation</a></li>
       </ul>
-    </section>
+    </div>
   </main>
-
-  <script>
-    // basic accordion
-    const acc = document.querySelectorAll(".accordion");
-    acc.forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-        const panel = btn.nextElementSibling;
-        panel.style.display = panel.style.display === "block" ? "none" : "block";
-      });
-    });
-  </script>
 </body>
 </html>
